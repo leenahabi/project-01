@@ -1,0 +1,82 @@
+<!DOCTYPE >
+<html>
+	<head>
+    	<meta charset="utf-8">
+        <title>TIC TAC TOE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../stylesheets/main.css">
+</head>
+<body>
+<!--background color switch-->
+        <ul id="switch">
+                <li id="coral"></li>
+                <li id="green"></li>
+                <li id="navy"></li>
+            </ul>
+<br>
+<h1 id="headtitle">tic tac toe</h1>
+
+<div class="enter"> <!--starting form-->
+        <form id="form">
+        <h5>Player 1 :</h5>
+        <input type="text" id ="p1Name" value="player 1" >
+        <br>
+        <h5>Player 2 :</h5>
+        <input type="text" id="p2Name" value="player 2" >
+        <br><br>
+        <input type="button" onclick="game()" value="Play" id ="play" >
+    </form>
+    </div>  
+
+    <div class="xo"><!--the tic tac toe table-->
+    <table>
+        <tr>
+            <td id="c0" class="side down"></td>
+            <td id="c1" class="side down"></td>
+            <td id="c2" class="down"></td>
+        </tr>
+        <tr>
+            <td id="c3" class="side down"></td>
+            <td id="c4" class="side down "></td>
+            <td id="c5" class="down"></td>
+            </tr>
+        <tr>
+            <td id="c6"class="side"></td>
+            <td id="c7" class="side"></td>
+            <td id="c8" ></td>
+        </tr>
+    </table>
+</div>
+<div class="players"> <!--players name display-->
+    <table>
+        <tr>
+        <td id="total1"></td>
+        </tr>
+        <tr>
+        <td id="p1"></td>
+        </tr>
+    </table> 
+    <table>
+      <tr> 
+          <td id="total2"></td>
+     </tr> 
+     <tr>
+    <td id="p2"></td>
+     </tr>
+     </table>
+    </div>
+<div class="winner"><!--winning statment container-->
+    <h1></h1>
+    <p class="replay">play again</p>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="../scripts/main.js"></script>
+
+</body>
+</html>

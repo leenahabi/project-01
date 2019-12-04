@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+/* font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Dosis', sans-serif;
+colors : 
+dark blue 16373D
+light blue 49A7C6
+white FFFFFF
+coral E4593C
+red B6230E */
+body {
+background-color: #E4593C ;
+color : #fff;
+font-family:'Montserrat Alternates', sans-serif;
+margin-top: 1%; 
+}
+
+#switch {
+    list-style: none;
+    padding: 5px 35px;
+  }
+  #switch li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 15px 0;
+    border-radius: 13px;
+    border: 2px solid #fff;
+  }
+#coral{
+    background-color: #E4593C;
+}
+#navy{
+    background-color: #16373D;
+}
+#green{
+    background-color:#00A57E;
+}
+#headtitle {
+    font-size: 50px;
+    text-align: center;
+}
+.enter {
+border: 3px solid #fff;
+margin: auto;
+padding: 20px 10px;
+width: 70%;
+height: 50%;
+font-size: 25px;
+text-align: center;
+}
+
+input{
+padding: 10px;
+width: 40%;
+}
+
+#play{
+    width: 20%;
+    background-color: #E4593C;
+    color: white;
+    border: 3px solid white;
+    margin: auto;
+    padding: 10px;
+    font-size: 15px;
+}
+#play:hover{
+    background-color: #930300;
+    cursor: pointer;
+   }
+
+.xo{
+    display: flex;
+    justify-content: center;   
+}
+
+.xo table {
+    border-collapse: collapse;
+    text-align:center;
+    font-size: 70px;
+    font-weight: bold;
+}
+.xo td{
+    height: 130px;
+    width: 130px;
+}
+.side {
+ 
+ border-right: 5px solid;
+ 
+}
+
+.down {
+    border-bottom: 5px solid;
+}
+
+.players{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+   margin: 0 2%;
+}
+.players table {
+    text-align:center; 
+    font-size: 30px;
+    font-weight: 700;  
+}
+.winner {
+    display: flex;
+    flex-flow: column; 
+ text-align: center;
+ justify-content: center;
+
+}
+.winner h1 {
+    text-align: center; 
+    font-size: 50px;
+}
+
+.replay {
+    border: 3px solid #fff;
+    padding : 15px 17px;
+    width: 10%;
+    position: relative;
+    left : 44%
+}
+.replay:hover{
+ background-color: #930300;
+ cursor: pointer;
+}
+
+
+/* @media screen and(min-width:1000px) {
+    body {
+        margin-top: 40px;
+    }
+    table {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    left : 57%
+    }
+    #headtitle {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 80px;
+        position: relative;
+         right: 5%;
+    }
+
+.xo{
+    display: block;
+    position: relative;
+    height: 70%;
+    width: 70%;
+}
+td{
+    height: 170px;
+    width: 170px;
+}
+.p1 {
+    display: inline;
+    position: absolute;
+    left:40px; 
+    font-size: 30px;
+    
+    }
+    .p2 {
+        display: inline;
+         position: absolute;
+        right: 40px; 
+        font-size: 30px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 50px;
+            color: #E4593C; 
+         }
+        .enter {
+             display: none; 
+         border: 3px solid #fff;
+        margin: auto;
+        padding: 10px 170px;
+        width: 40%;
+        height: 60%;
+        font-size: 30px;
+        }
+        
+        input{
+        padding: 10px;
+        position: absolute;
+        left : 40%;
+        
+        }
+        .replay {
+            border: 2px solid #fff;
+            padding: 5px 7px;
+            text-align: center;
+            width: 20%;
+            position: relative;
+            left: 37%;
+        }
+        #play {
+            width: 10%;
+            background-color:white;
+            margin: auto;
+            padding: 200px;
+            position: absolute;
+        left : 43%;
+        }
+}  */
+
+@media screen and (max-width:700px) and (min-width:200px) {
+body{
+    margin: 1%;
+
+}
+    table {
+    font-size: 50px;
+    }
+
+.xo{
+    display: flex;
+    justify-content: center;
+    margin: 4% 2%;
+}
+.xo td {
+    height: 120px;
+    width: 120px;
+}
+#p1 {
+    display: inline;
+    /* left:40px;  */
+    font-size: 25px;
+    }
+
+#p2 {
+        display: inline;
+        /* right: 40px;  */
+        font-size: 25px;
+        }
+ #headtitle {
+    
+            text-align: center;
+            /* margin-top: 20px; */
+            font-size: 35px;
+        }
+
+.enter {
+    width: 90%;
+    height: 60%;
+        }
+        
+        input{
+        padding: 10px;
+        width: 50%;
+        
+        }
+
+        #play{
+            width: 30%;
+        }
+
+        .replay {
+            width: 30%;
+            position: relative;
+            left : 28%
+        }
+}
+
+ @media screen and (min-width:1000px) and  (max-width:1400px) {
+body {
+    margin: 7% 1%;
+}
+    #switch li {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin: 0 15px 15px 0;
+        border-radius: 30px;
+        border: 2px solid #fff;
+      }
+      input{
+        padding: 25px;
+        width: 60%;
+        
+        }
+    .enter h5 {
+        font-size: 45px;
+    }
+
+        #play{
+            width: 30%;
+            padding: 15px;
+        }
+    table {
+    font-size: 50px;
+    }
+
+.xo{
+    display: flex;
+    justify-content: center;
+    margin: 4% 2%;
+    
+}
+.xo td{
+    height: 240px;
+    width: 240px;
+}
+#p1 {
+    display: inline;
+     left:40px;  
+    font-size: 40px;
+    }
+
+#p2 {
+        display: inline;
+     right: 40px; 
+        font-size: 40px;
+        }
+ #headtitle {
+    
+            text-align: center;
+            font-size: 70px;
+        }
+
+        .replay {
+            width: 30%;
+            position: relative;
+            left : 28%
+        }
+        .winner {
+            display: flex;
+            flex-flow: column; 
+         text-align: center;
+         justify-content: center;
+        }
+        .winner h1 {
+            text-align: center; 
+            font-size: 70px;
+            padding: 5%;
+        }
+        
+        .replay {
+            border: 3px solid #fff;
+            padding : 15px 17px;
+            width: 30%;
+            font-size: 30px;
+            position: relative;
+            left: 32%;
+        }
+} 
