@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
-/* font-family: 'Montserrat Alternates', sans-serif;
-font-family: 'Nunito', sans-serif;
-font-family: 'Dosis', sans-serif;
-colors : 
-dark blue 16373D
-light blue 49A7C6
-white FFFFFF
-coral E4593C
-red B6230E */
+
 body {
 background-color: #E4593C ;
 color : #fff;
