@@ -61,83 +61,106 @@ gbtn.on('click',function(){
     changeBg('#00A57E')
 })
 })
+
  //function to show the winning statment
 let winStatment = function (winner) { 
     $("td").off('click');
     if (winner == 'x') { 
     totalOne += 1
     $('.winner h1').text(name1+' '+"won")
-    $('.winner').fadeIn(1500)
-    $('.xo').slideUp(1400);
-    $('.players').slideUp(1400);
+    $('.winner').fadeIn(2000)
+    $('.xo').slideUp(1800);
+    $('.players').slideUp(1800);
     }
     else if (winner == 'o') {
     $('.winner h1').text(name2+' '+"won")
     totalTwo+=1
-    $('.winner').fadeIn(1500)
-    $('.xo').slideUp(1400);
-    $('.players').slideUp(1400);
+    $('.winner').fadeIn(2000)
+    $('.xo').slideUp(1800);
+    $('.players').slideUp(1800);
     }
+}
+function winningSequence(winOne , winTwo , winThree) {
+    $(winOne).css('textShadow','0 0 3px #fff')
+    $(winTwo).css('textShadow','0 0 3px #fff')
+    $(winThree).css('textShadow','0 0 3px #fff')
 }
 
 // function to check the positions of the x or o and see if it matches
 let checkWin = function () {
 if ((winn.c0 == winn.c1) && (winn.c0==winn.c2)) {
     if (winn.c0 ==='x'){
+        winningSequence('#c1','#c0','#c2');
         winStatment('x') }
 else if (winn.c0 ==='o'){
+    winningSequence('#c1','#c0','#c2');
     winStatment('o') } 
 }
 
 else if ((winn.c0 == winn.c3) && (winn.c0 == winn.c6)){
     if (winn.c0 =='x'){
+        winningSequence('#c0','#c3','#c6');
         winStatment('x') }
 else if (winn.c0 =='o'){
+    winningSequence('#c0','#c3','#c6');
     winStatment('o')} 
 }
 
 
 else if ((winn.c0 == winn.c4)&& (winn.c0 == winn.c8)) {
+    
     if (winn.c0 =='x'){
+        winningSequence('#c0','#c4','#c8');
         winStatment('x') }
 else if (winn.c0 =='o'){
+    winningSequence('#c0','#c4','#c8');
     winStatment('o')} 
  }
 
 
-else if ((winn.c1 == winn.c4) && (winn.c1==winn.c7)) {
-        if (winn.c1 =='x'){
+else if ((winn.c1 == winn.c4) && (winn.c1==winn.c7)) {  
+    if (winn.c1 =='x'){
+        winningSequence('#c1','#c4','#c7'); 
             winStatment('x') }
 else if (winn.c1 =='o'){
+    winningSequence('#c1','#c4','#c7'); 
     winStatment('o')} 
  }
 
 else if ((winn.c2 == winn.c4)&& (winn.c2==winn.c6)) {
     if (winn.c2 =='x'){
+        winningSequence('#c2','#c4','#c6');
         winStatment('x') }
 else if (winn.c2 =='o'){
+    winningSequence('#c2','#c4','#c6');
     winStatment('o');} 
 }                   
-                     
-else if ((winn.c2 == winn.c5)&& (winn.c8 == winn.c2)) {
-    if (winn.c2 =='x'){
-        winStatment('x') }
-    else if (winn.c2 =='o'){
-        winStatment('o')} 
-    }    
-    
-    
-    else if ((winn.c3 == winn.c4)&& (winn.c5 == winn.c3)) {
+   
+else if ((winn.c3 == winn.c4)&& (winn.c5 == winn.c3)) {     
     if (winn.c3 =='x'){
+        winningSequence('#c3','#c4','#c5');
         winStatment('x') }
     else if (winn.c3 =='o'){
+        winningSequence('#c3','#c4','#c5');
         winStatment('o')} 
-    }    
+    }   
+
+    else if ((winn.c2 == winn.c5)&& (winn.c5 === winn.c8)) {     
+        if (winn.c2 =='x'){
+            winningSequence('#c2','#c5','#c8');
+            winStatment('x') }
+        else if (winn.c2 =='o'){
+            winningSequence('#c2','#c8','#c8');
+            winStatment('o')} 
+        }   
+     
                              
     else if ((winn.c6 == winn.c7)&& (winn.c8 == winn.c6)) {
-    if (winn.c6 =='x'){
+        if (winn.c6 =='x'){
+        winningSequence('#c6','#c7','#c8');
         winStatment('x') }
     else if (winn.c6 =='o'){
+        winningSequence('#c6','#c7','#c8');
         winStatment('o')}  
     }  
     else { if (xo.length ==0)
@@ -188,6 +211,8 @@ function match (event) {
      winn['c7'] = '';
      winn['c8'] = '';
      $('td').on('click', match);
+     $('.xo td').html('');
+     $('.xo td').css('textShadow', 'none');
     $('.winner').hide();
     $('.xo').show();
     $('.players').show();
@@ -197,9 +222,6 @@ function match (event) {
     $('#p1').css("textDecoration",'underline')
     $('#p1').css("color",'#930300');
     $('#p2').css("color",'#fff');
-
-    $('.xo td').html('');
-   
   });
 
 

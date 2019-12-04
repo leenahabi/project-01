@@ -40,16 +40,4 @@ This is a basic tic tac toe game is played with two users.the first player is x 
 1. keep imroving the css layout and resposive desing on mobile
 2. add scores to the player matchs
 3. let the players to add there name to the game and diplay it on each side.
-<!--link-->
-[jquery](link)
-[Google](link)
 
-<!--images-->
-![wireframe](url/path)
-
---- 
-coding 
-### blah blah function 
-```js
-let ....
-```
