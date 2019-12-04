@@ -34,7 +34,12 @@ This is a basic tic tac toe game is played with two users.the first player is x 
 #### Day 3
 1. improve my page's layout using css
 2. make my page responsive to mobile users.
-3. 
+3. add a change theme feature.
+
+#### Day 4
+1. keep imroving the css layout and resposive desing on mobile
+2. add scores to the player matchs
+3. let the players to add there name to the game and diplay it on each side.
 <!--link-->
 [jquery](link)
 [Google](link)
