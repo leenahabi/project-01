@@ -53,14 +53,3 @@ coding
 ```js
 let ....
 ```
-/list of commands to use
-// .hide(100)  hide over a course of 100 milisec 
-// .show(100)  show ..same as above
-// .delay(100)  adds delay in mili secs
-// .slideUp(100) slide up 
-// .slideDown(100) slide down
-// .fadeIn(100) fading in
-// .fadeOut(100) Fading out
-// .fadeToggle(100) toggling between fading in and out repeat it by chaining it 
-// .toggle(100)  hides and show toggle
-// .slideToggle(100)  slide toggling#
