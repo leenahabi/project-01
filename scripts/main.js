@@ -173,9 +173,9 @@ else if ((winn.c3 == winn.c4)&& (winn.c5 == winn.c3)) {
 }
 
 
-$('td').on('click', match);
+$('td').on('click', displayXo);
 // a function that prints x and o on the table saves it in an object and turn off the clicking 
-function match (event) {
+function displayXo (event) {
     if (clickCount%2===0) {
         $('#p1').css("textDecoration",'none')
         $('#p2').css("textDecoration",'underline')
@@ -197,7 +197,7 @@ function match (event) {
 }
 
 // once the replay button is clicked this function will reset the values and let them play again
-  $('.replay').click(function(event) {
+  $('.replay').click(function() {
     $("td").off('click');
     xo = ['x','o','x','o','x','o','x','o','x']
     clickCount = 0;
@@ -210,7 +210,7 @@ function match (event) {
      winn['c6'] = '';
      winn['c7'] = '';
      winn['c8'] = '';
-     $('td').on('click', match);
+     $('td').on('click', displayXo);
      $('.xo td').html('');
      $('.xo td').css('textShadow', 'none');
     $('.winner').hide();
