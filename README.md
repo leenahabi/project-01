@@ -1,6 +1,9 @@
 
-# Project <Tic tac toe> 
+# Project Tic tac toe
+
+
 This is a basic tic tac toe game that is played by two users.the first player is x and the second player o.
+
 --- 
 ## My Project Deployment 
 This is a link to the game
@@ -23,7 +26,7 @@ This is a link to the game
 ## Planning and Development Process
 
 #### Day 1 
-1. design the wireframe and write my pseudu code
+1. design the wireframe and write my pseudocode
 2. write the basic html and css
 3. start with basic javascript functions such as printing eather x or o on the table.
 
@@ -82,5 +85,5 @@ making the game responsive to mobile phones was a bit difficult and time consumi
 
 ## Unsolved problems which would be fixed in future iterations. 
 
-In the future I'd like to improve this game to contain more animation and nice features.
-I'd also like to add some AI elements to make the game more challenging 
+In the future I'd like to improve this game to contain more animation and audio features.
+I'd also like to add some AI elements to make the game more challenging.
