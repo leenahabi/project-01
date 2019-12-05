@@ -1,5 +1,5 @@
 
-# Project Tic tac toe
+# Tic tac toe
 
 
 This is a basic tic tac toe game that is played by two users.the first player is x and the second player o.
