@@ -145,7 +145,7 @@ else if ((winn.c3 == winn.c4)&& (winn.c5 == winn.c3)) {
         winStatment('o')} 
     }   
 
-    else if ((winn.c2 == winn.c5)&& (winn.c5 === winn.c8)) {     
+    else if ((winn.c2 == winn.c8)&& (winn.c8 === winn.c5)) {     
         if (winn.c2 =='x'){
             winningSequence('#c2','#c5','#c8');
             winStatment('x') }

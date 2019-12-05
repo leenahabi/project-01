@@ -261,7 +261,7 @@ body{
         }
 }
 
- @media screen and (min-width:1000px) and  (max-width:1400px) {
+ /* @media screen and (min-width:1000px) and  (max-width:1400px) {
 body {
     margin: 7% 1%;
 }
@@ -342,4 +342,4 @@ body {
             position: relative;
             left: 32%;
         }
-} 
+}  */
